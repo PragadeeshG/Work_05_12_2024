@@ -1,0 +1,16 @@
+create table if not exists conditional_consuming_account(
+record_key Integer not null,
+consuming_itam_con_code Integer null,
+consuming_itam_con_code_position varchar(255) null,
+consuming_itam_con_code_length varchar(255) null,
+condition_expression_digits_position varchar(255) null,
+condition_expression_digits_length varchar(255) null,
+with_holding_tax_position char null,
+with_holding_tax_length varchar(255) null,
+required_tax_position varchar(255) null,
+required_tax_length varchar(255) null,
+fundraising_id_length varchar(255) null,
+fundraising_space varchar(255) null,
+pulse_space_name varchar(255) null,
+future_market varchar(255) null,
+constraint conditional_consuming_account_pk primary key(record_key));
